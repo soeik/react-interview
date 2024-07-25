@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 
 import { getUsers } from "../users";
-import { fetchUsersSuccess, incrementUser } from "../redux";
+import { fetchUsersSuccess } from "../redux";
 import { ColoredItem } from "../../styled/ColoredItem";
 import { ListWrapper } from "../../styled/ListWrapper";
 
