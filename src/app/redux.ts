@@ -10,10 +10,8 @@ const usersSlice = createSlice({
   initialState,
   reducers: {
     fetchUsersSuccess(state, { payload: users }: PayloadAction<User[]>) {},
-    addUser(state, { payload: user }: PayloadAction<User>) {},
-    incrementUser(state, { payload: userId }: PayloadAction<string>) {},
   },
 });
 
-export const { fetchUsersSuccess, addUser, incrementUser } = usersSlice.actions;
+export const { fetchUsersSuccess } = usersSlice.actions;
 export default usersSlice.reducer;

@@ -1,17 +1,12 @@
-import { useState } from "react";
-
-import { UsersList } from "./UsersList";
-import { NameInput } from "./NameInput";
+import { UsersList } from "./components/UsersList";
+import { NameInput } from "./components/NameInput";
+import { UsersCountRating } from "./components/UsersCountRating";
 
 export const App = () => {
-  const [name, setName] = useState("");
-
-  // #1 Уточнить тип
-  const onNameChange = (event) => setName(event.currentTarget.value);
-
   return (
     <>
-      <NameInput onChange={onNameChange} value={name} />
+      <NameInput />
+      <UsersCountRating />
       <UsersList />
     </>
   );
