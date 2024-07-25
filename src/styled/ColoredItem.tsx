@@ -3,8 +3,10 @@ import { faker } from "@faker-js/faker";
 // Не меняется в задании
 export const ColoredItem = ({
   children,
+  width = "200px",
 }: {
-  children: React.ReactElement | React.ReactElement[];
+  children: React.ReactNode;
+  width?: string;
 }) => {
   const color = faker.color.rgb();
 
@@ -15,7 +17,7 @@ export const ColoredItem = ({
         background: color,
         padding: "1rem",
         textAlign: "center",
-        width: "200px",
+        width,
       }}
     >
       {children}
