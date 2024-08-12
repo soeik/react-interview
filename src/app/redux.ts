@@ -1,4 +1,4 @@
-import { User } from "@/types";
+import { Post, User } from "@/types";
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 
 interface UsersPageState {}
@@ -10,7 +10,7 @@ const usersSlice = createSlice({
   initialState,
   reducers: {
     fetchUsersSuccess(state, { payload: users }: PayloadAction<User[]>) {},
-    fetchPostsSuccess(state, { payload: posts }: PayloadAction<User[]>) {},
+    fetchPostsSuccess(state, { payload: posts }: PayloadAction<Post[]>) {},
   },
 });
 
