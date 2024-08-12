@@ -3,7 +3,7 @@ import { faker } from "@faker-js/faker";
 // Не меняется в задании
 export const ColoredItem = ({
   children,
-  width = "200px",
+  width = "100%",
 }: {
   children: React.ReactNode;
   width?: string;
@@ -14,9 +14,11 @@ export const ColoredItem = ({
     <div
       style={{
         cursor: "pointer",
+        display: "flex",
+        gap: "20px",
         background: color,
         padding: "1rem",
-        textAlign: "center",
+        textAlign: "left",
         width,
       }}
     >

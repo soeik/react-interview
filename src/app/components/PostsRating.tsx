@@ -5,7 +5,7 @@ export const UsersCountRating = () => {
   const rating: string = "";
   return (
     <div>
-      <h2>Топ 5 пользователей с максимальным значением count</h2>
+      <h2>Топ 5 постов с максимальным количеством лайков</h2>
       <ColoredItem width="100%">{rating}</ColoredItem>
     </div>
   );
