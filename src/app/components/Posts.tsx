@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 
+import { useDispatch } from "@/store";
 import { fetchPosts, fetchUsers } from "../api";
 import { fetchPostsSuccess, fetchUsersSuccess } from "../redux";
 import { ColoredItem } from "../../styled/ColoredItem";
 import { ListWrapper } from "../../styled/ListWrapper";
-import { useDispatch } from "@/store";
 
 // Реализовать отображение списка постов по шаблону (имя пользователя, заголовок, счетчик лайков (кликов))
 // <ColoredItem>
@@ -24,7 +24,6 @@ export const Posts = () => {
 
   return (
     <>
-      {/* TODOL matches */}
       <hr />
       <ListWrapper>
         {/* TODO: users list */}

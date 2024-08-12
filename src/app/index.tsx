@@ -1,10 +1,10 @@
 import { Posts } from "./components/Posts";
-import { UsersCountRating } from "./components/PostsRating";
+import { PostsRating } from "./components/PostsRating";
 
 export const App = () => {
   return (
     <>
-      <UsersCountRating />
+      <PostsRating />
       <Posts />
     </>
   );
