@@ -18,10 +18,6 @@ import { useDispatch } from "@/store";
 export const Posts = () => {
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    fetchPosts().then((resp) => dispatch(fetchPostsSuccess(resp.data)));
-  }, []);
-
   const onPostClick = () => {
     // TODO: increment likes
   };
