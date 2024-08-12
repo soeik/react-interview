@@ -5,7 +5,6 @@ import {
 } from "react-redux";
 import { configureStore, createListenerMiddleware } from "@reduxjs/toolkit";
 import { rootReducer } from "./root.redux";
-
 export const listenerMiddleware = createListenerMiddleware();
 
 export const store = configureStore({

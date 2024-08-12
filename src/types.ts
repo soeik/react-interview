@@ -1,5 +1,11 @@
 export interface User {
-  id: string;
+  id: number;
   name: string;
-  clickCount: number;
+}
+
+export interface Post {
+  id: number;
+  userId: number;
+  title: string;
+  likes: number;
 }

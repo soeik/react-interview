@@ -1,13 +1,13 @@
-import { UsersList } from "./components/UsersList";
+import { Posts } from "./components/Posts";
 import { NameInput } from "./components/NameInput";
-import { UsersCountRating } from "./components/UsersCountRating";
+import { UsersCountRating } from "./components/PostsRating";
 
 export const App = () => {
   return (
     <>
       <NameInput />
       <UsersCountRating />
-      <UsersList />
+      <Posts />
     </>
   );
 };

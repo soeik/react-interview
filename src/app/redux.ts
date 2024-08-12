@@ -10,8 +10,10 @@ const usersSlice = createSlice({
   initialState,
   reducers: {
     fetchUsersSuccess(state, { payload: users }: PayloadAction<User[]>) {},
+    fetchPostsSuccess(state, { payload: posts }: PayloadAction<User[]>) {},
   },
 });
 
-export const { fetchUsersSuccess } = usersSlice.actions;
+export const { fetchUsersSuccess, fetchPostsSuccess } = usersSlice.actions;
+
 export default usersSlice.reducer;
